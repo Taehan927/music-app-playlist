@@ -1,4 +1,4 @@
-// import jsonwebtoken, which allows verificationm JWT tokens
+// import jsonwebtoken, which allows verification of JWT tokens
 const jwt = require("jsonwebtoken");
 
 // middleware used to protect routes that require a logged-in user
