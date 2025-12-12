@@ -24,7 +24,7 @@ function Login() {
       localStorage.setItem("token", res.data.token);
 
       setMessage("Logged in successfully!");
-      navigate("/"); 
+      navigate("/playlists"); 
     } catch (err) {
       console.error(err);
       setMessage(err.response?.data?.message || "Login failed");
