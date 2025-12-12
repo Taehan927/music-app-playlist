@@ -22,9 +22,9 @@ function Login() {
 
 
       localStorage.setItem("token", res.data.token);
-
-      setMessage("Logged in successfully!");
       navigate("/playlists"); 
+      setMessage("Logged in successfully!");
+      
     } catch (err) {
       console.error(err);
       setMessage(err.response?.data?.message || "Login failed");
